@@ -1,0 +1,79 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #E53935;
+}
+
+.error {
+  color: #E53935;
+  font-weight: bold;
+}
+
+#hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+
+/* Confetti container */
+#confetti-container {
+  position: fixed;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  overflow: visible;
+  z-index: 9999;
+}
+
+.metric {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.metric svg.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  stroke-width: 2;
+}
+
+#paymentMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #E53935;
+}
+
+#buyBoostBtn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#badge {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+#progressBar {
+  width: 200px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+#progressFill {
+  height: 100%;
+  background: #3949AB;
+  width: 0%;
+  transition: width 0.5s ease;
+}
