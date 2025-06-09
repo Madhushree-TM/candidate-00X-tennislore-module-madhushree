@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CareDuel Fixes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>CareDuel Tech Assessment Fixes</h1>
+
+  <!-- Module 1: Signup with email validation -->
+  <section id="signup">
+    <h2>Signup Form</h2>
+    <form id="signupForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+      <button type="submit">Sign Up</button>
+      <p id="emailError" class="error"></p>
+    </form>
+  </section>
+
+  <!-- Hero Image -->
+  <section id="hero">
+    <img src="https://via.placeholder.com/600x200" alt="Hero Image" />
+  </section>
+
+  <!-- Module 2: File upload with size limit and confetti -->
+  <section id="upload">
+    <h2>Upload Media (max 5MB)</h2>
+    <input type="file" id="fileInput" />
+    <p id="fileError" class="error"></p>
+    <button id="submitUpload">Submit</button>
+  </section>
+
+  <!-- Confetti container -->
+  <div id="confetti-container"></div>
+
+  <!-- Module 3: Raffle with extra entries and countdown -->
+  <section id="raffle">
+    <h2>Raffle Panel</h2>
+    <p>Tickets: <span id="ticketCount">1</span></p>
+    <button id="buyExtra">Buy Extra Entries</button>
+    <p id="countdown">Raffle closes in 00:10:00</p>
+  </section>
+
+  <!-- Module 4: Metrics dashboard admin check -->
+  <section id="dashboard">
+    <h2>Metrics Dashboard</h2>
+    <div id="metrics">
+      <div class="metric">
+        <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="blue" stroke-width="2" fill="none"/></svg>
+        <p>Viewers: 1200</p>
+      </div>
+      <div class="metric">
+        <svg class="icon" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" stroke="green" stroke-width="2" fill="none"/></svg>
+        <p>Tickets Sold: 300</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Module 5: Stripe payment button -->
+  <section id="payments">
+    <h2>Buy Boost</h2>
+    <button id="buyBoostBtn">Buy Boost</button>
+    <div id="paymentMessage"></div>
+  </section>
+
+  <!-- Module 6: Rewards badge and progress -->
+  <section id="rewards">
+    <h2>User Rewards</h2>
+    <div id="userProfile">
+      <span id="badge" title="Badge">🏅</span>
+      <p>Points: <span id="points">40</span></p>
+      <div id="progressBar">
+        <div id="progressFill"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
